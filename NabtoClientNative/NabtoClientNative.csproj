@@ -8,7 +8,7 @@
     <Authors>Nabto</Authors>
     <Description>Native Nabto client libraries</Description>
     <Title>Native Nabto Client Libraries</Title>
-    <Version>3.0.15</Version>
+    <Version>4.1.0-alpha1</Version>
     <IncludeBuildOutput>false</IncludeBuildOutput>
   </PropertyGroup>
   <ItemGroup>
