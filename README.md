@@ -34,11 +34,10 @@ nabto-libs
 └── win64-static
 ```
 
-```
-cd sdk/src/NabtoClientNative
-dotnet restore
-dotnet build
-dotnet pack
-```
 
-upload the resulting package to nuget.
+the prefered way to build the package is to use the command
+./docker-build.sh it creates a docker container and runs build.sh in
+it.
+
+When the package is built the resulting package can be uploaded to
+nuget.org or used directly using a custom nuget package repository.
