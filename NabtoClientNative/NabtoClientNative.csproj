@@ -6,13 +6,13 @@
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <Company>Nabto Aps</Company>
     <Authors>Nabto</Authors>
-	<Description>Native Nabto client libraries</Description>
-	<Title>Native Nabto Client Libraries</Title>
+    <Description>Native Nabto client libraries</Description>
+    <Title>Native Nabto Client Libraries</Title>
     <Version>3.0.15</Version>
-	<IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
   </PropertyGroup>
   <ItemGroup>
-  	
+    
     <Content Include="..\nabto-libs\win32-static\bin\nabto_client_api.dll">
       <PackagePath>runtimes/win/native/nabto_client_api.dll</PackagePath>
       <Pack>true</Pack>
@@ -29,13 +29,13 @@
       <PackagePath>runtimes/osx-x64/native/libnabto_client_api.dylib</PackagePath>
       <Pack>true</Pack>
     </Content>
-	<Content Include="..\nabto-libs\share\**\*.*">
-	  <PackagePath>content/share/%(RecursiveDir)%(Filename)%(Extension)</PackagePath>
-	  <Pack>true</Pack>
-	</Content>
-	<Content Include="NabtoClientNative.targets">
-	  <PackagePath>build/</PackagePath>
-	  <Pack>true</Pack>
-	</Content>
+    <Content Include="..\nabto-libs\share\**\*.*">
+      <PackagePath>content/share/%(RecursiveDir)%(Filename)%(Extension)</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+    <Content Include="NabtoClientNative.targets">
+      <PackagePath>build/</PackagePath>
+      <Pack>true</Pack>
+    </Content>
   </ItemGroup>      
 </Project>
