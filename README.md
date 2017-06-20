@@ -6,10 +6,9 @@ Most users should just use the available library from nuget https://www.nuget.or
 
 ## Building
 
-download nabto-libs.zip and nabto-resources.zip from https://www.nabto.com
+download nabto-libs.zip from https://www.nabto.com
 
 extract nabto-libs.zip into nabto-libs
-extract nabto-resources.zip into nabto-libs/share
 
 such that the following tree occurs
 
