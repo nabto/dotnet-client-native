@@ -6,6 +6,8 @@ Most users should just use the available library from nuget https://www.nuget.or
 
 ## Building
 
+### Download native libraries
+
 download nabto-libs.zip from https://www.nabto.com
 
 extract nabto-libs.zip into nabto-libs
@@ -14,25 +16,17 @@ such that the following tree occurs
 
 ```
 nabto-libs
-├── android
-├── android-arm64
-├── android-armv7
-├── android-x86
-├── ios
-├── ios-arm64
-├── ios-armv7
-├── ios-armv7s
-├── ios-i386
-├── ios-x86_64
 ├── linux64
 ├── mac64
-├── share
-├── win32
 ├── win32-static
-├── win64
 └── win64-static
 ```
 
+### Bump version info
+
+To bump the version number write a new value to the file NabtoClientNative/NabtoClientNative.csproj
+
+### Build nuget package
 
 the prefered way to build the package is to use the command
 ./docker-build.sh it creates a docker container and runs build.sh in
