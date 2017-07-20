@@ -10,9 +10,7 @@ if [ "$1" != "" ]; then
     VERSION_ARG="/p:Version=$1"
 fi
 
-ARTIFACTS_DIR=$DIR/artifacts
-
-mkdir -p $ARTIFACTS_DIR
+mkdir -p $DIR/artifacts
 
 dotnet restore
-dotnet pack $VERSION_ARG -o $ARTIFACTS_DIR -c Release
+dotnet pack $VERSION_ARG -o ../artifacts -c Release
